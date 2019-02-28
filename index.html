@@ -49,64 +49,23 @@
             </div>
         </div>
     </div>
+    <div class="booking">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-
-    <form action = "">
-        <p>BOOK NOW / GET A QUOTE</p>
-        <div class="form-group">
-            <div class="controls">
-                <input type="text" id="f-name" class="floatLabel" name="f-name">
-                <label for="f-name">First Name</label>
-            </div>
-            <div class="controls">
-                <input type="text" id="l-name" class="floatLabel" name="l-name">
-                <label for="l-name">Last Name</label>
-            </div>
-            <div class="controls">
-                <input type="text" id="email" class="floatLabel" name="email">
-                <label for="email">Email</label>
-            </div>
-            <div class="controls">
-                <input type="tel" id="phone" class="floatLabel" name="phone">
-                <label for="phone">Phone</label>
-            </div>
-            <div class="controls">
-                <input type="text" id="from" class="floatLabel" name="from">
-                <label for="from">Pick-up address</label>
-            </div>
-            <div class="controls">
-                <i class="sort"></i>
-                <select class="floatLabel">
-                    <option value="blank" selected></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="3">4</option>
-                    <option value="3">5</option>
-                </select>
-                <label for="quantity"><i class="quantity"></i>&nbsp;&nbsp;How many rooms</label>
-            </div>
-            <!--<div class="controls">
-                <input type="number" id="room-number" class="floatLabel" name="room-number">
-                <label for="room-number">How many rooms</label>
-            </div>-->
-            <div class="controls">
-                <input type="text" id="to" class="floatLabel" name="to">
-                <label for="to">Delivery address</label>
-            </div>
-            <div class="controls">
-                <input type="date" id="date" class="floatLabel" name="date" value="<?php echo date('Y-m-d'); ?>">
-                <label for="date" class="label-date"><i class="calendar"></i>&nbsp;&nbsp;Moving date</label>
-            </div>
-            <div class="controls">
-                <textarea name="comments" class="floatLabel" id="comments"></textarea>
-                <label for="comments">Comments</label>
-            </div>
-                <button type="submit" value="Submit" class="col-1-4">Submit</button>
-            </div>
-        </div>
-    </form>
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 
 
 
