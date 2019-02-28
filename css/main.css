@@ -64,7 +64,6 @@ a:hover {
     display: table;
     width: 900px;
     margin: 0 auto 0;
-    background-color: #5DB267;
 }
 /* Create three equal columns that floats next to each other */
 .column {
@@ -88,12 +87,11 @@ footer {
     width: 100%;
     margin: auto;
     background-color: #303030;
-
+    font-size: 15px;
 }
 .wrapper4 {
     width: 50%;
     margin: auto;
-
 }
 .wrapper4 img {
     width: 150px;
@@ -103,11 +101,9 @@ footer {
 }
 .wrapper4 span {
     color: #5DB267;
-    font-size: 15px;
 }
 .wrapper4 p {
     color: white;
-    font-size: 15px;
     margin-top: 0;
 }
 /* Booking form CSS starts here https://www.w3schools.com/css/css_form.asp*/
