@@ -1,0 +1,117 @@
+/*Selects all elements*/
+* {
+  box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat", serif;
+    margin: 0;
+}
+/* Fixed area style */
+.static {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #303030;
+    display: table;
+    top: 0;
+}
+.static p {
+    color: white;
+    font-size: 25px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.wrapper1 {
+    margin: 80px auto 0;
+    width: 100%;
+}
+.wrapper1 img {
+    width: 260px;
+    height: 260px;
+    margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.wrapper2 {
+    margin: 10px auto 0;
+    width: 50%; /*If doesn't look good - change to 600px*/
+}
+.wrapper2 p {
+    color: #303030;
+    font-size: 20px;
+    text-align: center;
+}
+.wrapper3 {
+    margin: 0 auto 0;
+    background-color: #5DB267;
+    width: 100%;
+}
+.wrapper3 p {
+    padding-top: 40px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+/* Clear floats after the columns */
+.row {
+    display: table;
+    width: 900px;
+    margin: auto;
+    background-color: #5DB267;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, .column1, .row, row1 {
+    width: 100%;
+  }
+}
+
+.row .column p {
+    color: #303030;
+    font-size: 25px;
+    text-align: center;
+}
+.row .column p span {
+    color: white;
+    font-size: 25px;
+}
+footer {
+    margin: 0 auto 0;
+    background-color: #303030;
+    width: 100%;
+}
+.row1 {
+    display: table;
+    width: 900px;
+    margin: auto;
+    background-color: #303030;
+}
+.column1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.row1 img {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+	display: block;
+}
+.row1 .column1 span {
+    color: #5DB267;
+    font-size: 15px;
+}
+.row1 .column1 p {
+    color: white;
+    font-size: 15px;
+}
+/* Booking form CSS starts here */
+
