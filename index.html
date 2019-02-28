@@ -53,29 +53,33 @@
         <p>BOOK NOW / GET A QUOTE</p>
         <form action="">
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name">
-
+            <input type="text" id="fname" name="fname" placeholder="First name">
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name">
-
+            <input type="text" id="lname" name="lname" placeholder="Last name">
             <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Email">
-
-            <label for="number">How many room?</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone #">
+            <label for="date">Choose moving day</label>
+            <input type="date" id="date" name="date" placeholder="Moving date">
+            <label for="address1">Pick-up address</label>
+            <input type="text" id="address1" name="address1" placeholder="Address (Street, City, Zip)">
+            <label for="number">How many rooms?</label>
             <select id="number" name="number">
-                <option value="blank" selected></option>
+                <option value="blank" selected>Number of rooms</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
                 <option value="5">5</option>
             </select>
+            <label for="address2">Delivery address</label>
+            <input type="text" id="address2" name="address2" placeholder="Address (Street, City, Zip)">
+            <label for="comments">Details</label>
+            <textarea name="comments" placeholder="Any additional details"></textarea>
             <input type="submit" value="Submit">
         </form>
     </div>
-
-
-
     <footer>
         <div class="wrapper4">
             <p><img src="/img/logo.png" alt="Baloo"><br><span>Service Areas</span><br>Los Angeles, Orange County, Irvine / Southern California</p>
