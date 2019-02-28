@@ -68,8 +68,8 @@ body {
 
 }
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column, .column1, .row, row1 {
+@media screen and (max-width: 900px) {
+  .column, .row {
     width: 100%;
   }
 }
@@ -84,33 +84,31 @@ body {
     font-size: 25px;
 }
 footer {
-    margin: 0 auto 0;
-    background-color: #303030;
-    width: 100%;
-}
-.row1 {
     display: table;
-    width: 900px;
+    width: 100%;
     margin: auto;
     background-color: #303030;
+
 }
-.column1 {
-    float: left;
-    width: 50%;
-    padding: 10px;
+.wrapper4 {
+    width: 35%;
+    margin: auto;
+
 }
-.row1 img {
+.wrapper4 img {
     width: 150px;
     height: 150px;
-    margin: auto;
-	display: block;
+    float: left;
+
 }
-.row1 .column1 span {
+.wrapper4 span {
     color: #5DB267;
     font-size: 15px;
 }
-.row1 .column1 p {
+.wrapper4 p {
     color: white;
     font-size: 15px;
+    margin-top: 0;
+
 }
 /* Booking form CSS starts here */
