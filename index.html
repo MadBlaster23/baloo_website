@@ -50,18 +50,25 @@
         </div>
     </div>
     <div class="booking">
-        <form action="/action_page.php">
+        <p>BOOK NOW / GET A QUOTE</p>
+        <form action="">
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <input type="text" id="fname" name="firstname" placeholder="Your name">
 
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name">
 
-            <label for="country">Country</label>
-            <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Email">
+
+            <label for="number">How many room?</label>
+            <select id="number" name="number">
+                <option value="blank" selected></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
             <input type="submit" value="Submit">
         </form>
