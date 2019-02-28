@@ -26,7 +26,6 @@ a:hover {
 .static p {
     color: white;
     font-size: 25px;
-    display: table-cell;
     vertical-align: middle;
     text-align: center;
 }
@@ -37,18 +36,17 @@ a:hover {
 .wrapper1 img {
     width: 260px;
     height: 260px;
-    margin-left: auto;
-	margin-right: auto;
+    margin: 0 auto 0;
 	display: block;
 }
 .wrapper2 {
     margin: 10px auto 0;
     width: 50%; /*If doesn't look good - change to 600px*/
+    font-size: 20px;
+    text-align: center;
 }
 .wrapper2 p {
     color: #303030;
-    font-size: 20px;
-    text-align: center;
 }
 .wrapper3 {
     margin: 0 auto 0;
@@ -73,7 +71,6 @@ a:hover {
     float: left;
     width: 33.33%;
     padding: 10px;
-
 }
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 900px) {
@@ -217,15 +214,8 @@ form {
 }
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .column1, .column2, input[type=submit] {
+    .column1, .column2, .column3 {
         width: 100%;
-        margin-top: 0;
-    }
-}
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    input[type=submit] {
-        width: 100px;
         margin-top: 0;
     }
 }
