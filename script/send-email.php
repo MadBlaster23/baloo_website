@@ -17,13 +17,25 @@ $thankyou_page = "thank-you.html";
 This next bit loads the form field data into variables.
 If you add a form field, you will need to add it here.
 */
-$email_address = $_REQUEST['email_address'] ;
-$comments = $_REQUEST['comments'] ;
-$first_name = $_REQUEST['first_name'] ;
+$email = $_REQUEST['email'];
+$firstname = $_REQUEST['firstname'];
+$lastname = $_REQUEST['lastname'];
+$phone = $_REQUEST['phone'];
+$address1 = $_REQUEST['address1'];
+$address2 = $_REQUEST['address2'];
+$number = $_REQUEST['number'];
+$date = $_REQUEST['date'];
+$comments = $_REQUEST['comments'];
 $msg =
-"First Name: " . $first_name . "\r\n" .
-"Email: " . $email_address . "\r\n" .
-"Comments: " . $comments ;
+"First Name: " . $firstname . "\r\n" .
+"Last Name: " . $lastname . "\r\n" .
+"Email: " . $email . "\r\n" .
+"Phone number: " . $phone . "\r\n" .
+"Pick-up address: " . $address1 . "\r\n" .
+"Delivery address: " . $address2 . "\r\n" .
+"Number of rooms: " . $number . "\r\n" .
+"Moving date: " . $date . "\r\n" .
+"Any additional details: " . $comments ;
 
 /*
 The following function checks for email injection.
