@@ -49,32 +49,32 @@
         <form method="post" action="script/send_mail.php">
             <div class="row1">
                 <div class="column1">
-                    <input type="text" id="fname" name="firstname" placeholder="First name">
+                    <input type="text" id="fname" name="firstname" placeholder="First name" required>
                 </div>
                 <div class="column2">
-                    <input type="text" id="lname" name="lastname" placeholder="Last name">
+                    <input type="text" id="lname" name="lastname" placeholder="Last name" required>
                 </div>
             </div>
             <div class="row1">
                 <div class="column1">
-                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="column2">
-                    <input type="tel" id="phone" name="phone" placeholder="Phone number">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
                 </div>
             </div>
             <div class="row1">
                 <div class="column1">
-                    <input type="text" id="address1" name="address1" placeholder="Pick-up address">
+                    <input type="text" id="address1" name="address1" placeholder="Pick-up address" required>
                 </div>
                 <div class="column2">
-                    <input type="text" id="address2" name="address2" placeholder="Delivery address">
+                    <input type="text" id="address2" name="address2" placeholder="Delivery address" required>
                 </div>
             </div>
             <div class="row1">
                 <div class="column1">
-                    <select id="number" name="number">
-                        <option value="blank" selected>Number of rooms</option>
+                    <select id="number" name="number" required>
+                        <option value="" hidden>Number of rooms</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
