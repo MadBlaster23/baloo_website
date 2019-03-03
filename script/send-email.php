@@ -9,7 +9,7 @@ $admin = "masblaster23@protonmail.com";
 This bit sets the URLs of the supporting pages.
 If you change the names of any of the pages, you will need to change the values here.
 */
-$feedback_page = "index.html";
+$index_page = "index.html";
 $error_page = "error-message.html";
 $thankyou_page = "thank-you.html";
 
@@ -61,12 +61,12 @@ function isInjected($str) {
 }
 
 // If the user tries to access this script directly, redirect them to the feedback form,
-if (!isset($_REQUEST['email_address'])) {
-header( "Location: $feedback_page" );
+if (!isset($_REQUEST['email'])) {
+header( "Location: $index_page" );
 }
 
 // If the form fields are empty, redirect to the error page.
-elseif (empty($first_name) || empty($email_address)) {
+elseif (empty($firstname) || empty($lastname) || empty($email) || empty($phone) || empty($address1) || empty($address2) || empty($number) || empty($date)) {
 header( "Location: $error_page" );
 }
 
@@ -74,7 +74,7 @@ header( "Location: $error_page" );
 If email injection is detected, redirect to the error page.
 If you add a form field, you should add it here.
 */
-elseif ( isInjected($email_address) || isInjected($first_name)  || isInjected($comments) ) {
+elseif ( isInjected($firstname) || isInjected($lastname)  || isInjected($email) || isInjected($phone) || isInjected($address1) || isInjected($address2) || isInjected($number) || isInjected($date) ) {
 header( "Location: $error_page" );
 }
 
