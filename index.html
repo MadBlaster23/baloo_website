@@ -46,7 +46,7 @@
     </div>
     <div id="booking">
         <p>BOOK NOW / GET A QUOTE</p>
-        <form action="">
+        <form method="post" action="script/send_mail.php">
             <div class="row1">
                 <div class="column1">
                     <input type="text" id="fname" name="firstname" placeholder="First name">
@@ -88,7 +88,7 @@
             </div>
             <div class="row1">
                 <div class="column3">
-                    <textarea name="comments" placeholder="Any additional details"></textarea>
+                    <textarea name="comments" placeholder="Any additional details" maxlength="500"></textarea>
 	                <input type="submit" value="Submit">
 	            </div>
             </div>
