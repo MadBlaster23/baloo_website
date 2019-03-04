@@ -60,6 +60,12 @@ a:hover {
     padding-top: 20px;
     color: white;
 }
+.column img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 0;
+	display: block;
+}
 /* Clear floats after the columns */
 .row {
     display: table;
