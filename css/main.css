@@ -39,10 +39,11 @@ a:hover {
 	display: block;
 }
 .wrapper2 {
-    width: 50%;
+    width: 900px;
     margin: 10px auto 10px;
     font-size: 20px;
     text-align: center;
+    padding-bottom: 5px;
 }
 .wrapper2 p {
     color: #303030;
@@ -74,7 +75,7 @@ a:hover {
 }
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 900px) {
-  .column, .row {
+  .column, .row, .wrapper2 {
     width: 100%;
   }
 }
@@ -101,7 +102,7 @@ footer {
 }
 .row2 p {
     color: white;
-    margin-top: 10px;
+    margin: 10px;
 }
 .column4 {
     float: left;
