@@ -72,7 +72,7 @@ elseif ( isInjected($firstname)
 }
 // If we passed all previous tests, send the email then redirect to the thank you page
 else {
-	mail( "$admin", "Booking form result", $msg );
+	mail( "$admin", "Booking form result", $msg, "From: ".$email );
 	header( "Location: $thankyou_page" );
 }
 ?>
