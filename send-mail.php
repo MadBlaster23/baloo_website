@@ -48,7 +48,6 @@ function isInjected($str) {
 if (!isset($_REQUEST['email'])) {
     header( "Location: $index_page" );
 }
-
 // If the form fields are empty, redirect to the error page.
 elseif (empty($firstname)
 || empty($lastname)
