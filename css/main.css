@@ -188,7 +188,7 @@ input[type=submit]:hover {
     text-align: center;
 }
 form {
-    width: 50%;
+    width: 900px;
     margin: auto;
     font-size: 15px;
 }
@@ -219,8 +219,8 @@ form {
     display: table;
     clear: both;
 }
-@media screen and (max-width: 600px) {
-    .column1, .column2, .column3 {
+@media screen and (max-width: 900px) {
+    form, .column1, .column2, .column3 {
         width: 100%;
         margin-top: 0;
     }
