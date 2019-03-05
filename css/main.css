@@ -220,7 +220,7 @@ form {
     clear: both;
 }
 @media screen and (max-width: 900px) {
-    form, .row1, .column1, .column2, .column3 {
+    form, .column1, .column2, .column3 {
         width: 100%;
         margin-top: 0;
     }
