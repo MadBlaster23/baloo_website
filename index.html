@@ -49,10 +49,10 @@
         <form method="post" action="send-mail.php">
             <div class="row1">
                 <div class="column1">
-                    <input type="text" id="fname" name="firstname" placeholder="First name" required>
+                    <input type="text" id="firstname" name="firstname" placeholder="First name" required>
                 </div>
                 <div class="column2">
-                    <input type="text" id="lname" name="lastname" placeholder="Last name" required>
+                    <input type="text" id="lastname" name="lastname" placeholder="Last name" required>
                 </div>
             </div>
             <div class="row1">
@@ -83,12 +83,12 @@
                     </select>
                 </div>
                 <div class="column2">
-	                <input type="date" name="date" data-placeholder="Moving date" required aria-required="true">
+	                <input type="date" id="date" name="date" data-placeholder="Moving date" required aria-required="true">
                 </div>
             </div>
             <div class="row1">
                 <div class="column3">
-                    <textarea name="comments" placeholder="Any additional details" maxlength="500"></textarea>
+                    <textarea id="comments" name="comments" placeholder="Any additional details" maxlength="500"></textarea>
 	                <input type="submit" value="Submit">
 	            </div>
             </div>
