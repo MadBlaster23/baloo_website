@@ -10,7 +10,16 @@
 	<!-- Google font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<!-- Custom stlylesheet -->
-	<link type="text/css" media="screen" rel="stylesheet" href="css/main.css" />
+	<link type="text/css" media="screen" rel="stylesheet" href="css/main.css">
+    <!-- jQuery -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( ".date" ).datepicker();
+        } );
+    </script>
 </head>
 <body>
     <!-- Fixed area -->
@@ -83,7 +92,7 @@
                     </select>
                 </div>
                 <div class="column2">
-	                <input type="date" id="date" name="date" data-placeholder="Moving date" required aria-required="true">
+                    <input type="text" id="date" class="date" placeholder="Moving date" required>
                 </div>
             </div>
             <div class="row1">
