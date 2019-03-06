@@ -24,16 +24,15 @@
     </script>
     <script>
         function ValidateEmail(inputText) {
-            var mailformat = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-            if(inputText.value.match(mailformat)) {
-                document.form.email.focus();
-                return true;
-		    } else {
-                alert("You have entered an invalid email address!");
+	        var mailformat = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            if(!inputText.value.match(mailformat)) {
+                alert("You have entered an invalid email address");
                 document.form.email.focus();
                 return false;
-		    }
-	    }
+            }
+            alert("Validations successful!");
+            return true;
+        }
     </script>
 </head>
 <body>
@@ -70,7 +69,7 @@
     </div>
     <div id="booking">
         <p>BOOK NOW / GET A QUOTE</p>
-        <form name="form" method="post" action="send-mail.php">
+        <form name="form" method="post" action="send-mail.php" onsubmit="return ValidateEmail(document.form.email)">
             <div class="row1">
                 <div class="column1">
                     <input type="text" id="firstname" name="firstname" placeholder="First name" required>
@@ -113,7 +112,7 @@
             <div class="row1">
                 <div class="column3">
                     <textarea id="comments" name="comments" placeholder="Any additional details" maxlength="500"></textarea>
-	                <input type="submit" value="Submit" onclick="ValidateEmail(document.form.email)">
+	                <input type="submit" value="Submit">
 	            </div>
             </div>
         </form>
