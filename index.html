@@ -22,6 +22,19 @@
             });
         } );
     </script>
+    <script>
+        function ValidateEmail(inputText) {
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if(inputText.value.match(mailformat)) {
+                document.form.email.focus();
+                return true;
+		    } else {
+                alert("You have entered an invalid email address!");
+                document.form.email.focus();
+                return false;
+		    }
+	    }
+    </script>
 </head>
 <body>
     <!-- Fixed area -->
@@ -57,7 +70,7 @@
     </div>
     <div id="booking">
         <p>BOOK NOW / GET A QUOTE</p>
-        <form method="post" action="send-mail.php">
+        <form name="form" method="post" action="send-mail.php">
             <div class="row1">
                 <div class="column1">
                     <input type="text" id="firstname" name="firstname" placeholder="First name" required>
@@ -100,7 +113,7 @@
             <div class="row1">
                 <div class="column3">
                     <textarea id="comments" name="comments" placeholder="Any additional details" maxlength="500"></textarea>
-	                <input type="submit" value="Submit">
+	                <input type="submit" value="Submit" onclick="ValidateEmail(document.form.email)">
 	            </div>
             </div>
         </form>
