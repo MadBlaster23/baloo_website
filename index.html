@@ -22,6 +22,17 @@
             });
         } );
     </script>
+    <script>
+        function checkEmail() {
+            var email = document.getElementById('email');
+            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            if (!filter.test(email.value)) {
+                alert('Please provide a valid email address');
+                email.focus;
+                return true;
+            }
+        }
+</script>
 </head>
 <body>
     <!-- Fixed area -->
@@ -68,7 +79,7 @@
             </div>
             <div class="row1">
                 <div class="column1">
-                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required onblur="Javascript:checkEmail();">
                 </div>
                 <div class="column2">
                     <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
