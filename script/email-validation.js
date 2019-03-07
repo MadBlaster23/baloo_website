@@ -5,6 +5,5 @@ function ValidateEmail(inputText){
         document.form.email.focus();
         return false;
     }
-    alert("Email validations successful");
     return true;
 }
